@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
+import Image from 'next/image';
+import mars from "../public/marsAvatarLg.png"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,7 +17,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' bg-white px-10'>
+      <main className=' bg-white px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl'>Developed By Mike</h1>
@@ -35,10 +37,23 @@ export default function Home() {
           <div className='text-5xl flex justify-center gap-16'>
             <AiFillLinkedin />
             <AiFillGithub />
+          </div>
+          <div className='flex items-center mx-auto bg-gradient-to-b from-green-700 rounded-full w-80 h-80 mt-20'>
+            <div className='mb-20'>
+            <Image src={mars} />
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className='text-3xl py-1 mt-5'>Something something</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'> looking for a yab</p>
+            <p className='text-md py-2 leading-8 text-gray-800'>I know how to code</p>
+          </div>
+          <div>
 
           </div>
- 
-
         </section>
         
       </main>
