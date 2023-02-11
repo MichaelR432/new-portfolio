@@ -7,6 +7,7 @@ import mars from "../public/marsAvatarLg.png"
 import weather from "../public/weather.png"
 import passwordgen from "../public/passwordgen.png"
 import teamgen from "../public/teamgen.png"
+import trackteam from "../public/track-team.png"
 import { useState } from 'react';
 
 
@@ -23,7 +24,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=' bg-white dark:bg-slate-500 px-10 md:px-20 lg:px-40'>
+      <main className=' bg-white dark:bg-slate-900 px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl'>Developed By Mike</h1>
@@ -46,8 +47,12 @@ export default function Home() {
               </p>
           </div>
           <div className='text-5xl flex justify-center gap-16'>
+            <a href='https://www.linkedin.com/in/michael-ramos-4399aa1a4/' target="blank">
             <AiFillLinkedin />
+            </a>
+            <a href='https://github.com/MichaelR432' target="blank">
             <AiFillGithub />
+            </a>
           </div>
           <div className='flex items-center mx-auto bg-gradient-to-b from-green-700 rounded-full w-80 h-80 mt-20'>
             <div className='mb-20'>
@@ -63,18 +68,30 @@ export default function Home() {
             <p className='text-center text-md py-2 leading-8 text-gray-800'>I know how to code</p>
           </div>
           <div className=' lg:flex gap-10 justify-between'>
+            <a href='https://michaelr432.github.io/weather-or-not-dashboard/' target="blank">
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={weather} alt="" className=" shadow-lg"></Image>
               <h3 className='text-lg font-medium pt-8 pb-2'>Weather Dashborad</h3>
             </div>
+            </a>
+            <a href='https://michaelr432.github.io/password-gen-chall3/' target="blank">
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={passwordgen} alt="" className=" shadow-lg"></Image>
               <h3 className='text-lg font-medium pt-8 pb-2'>Password Generator</h3>
             </div>
+            </a>
+            <a href='https://github.com/MichaelR432/generate-my-team' target="blank">
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
               <Image src={teamgen} alt="" className=" shadow-lg"></Image>
               <h3 className='text-lg font-medium pt-8 pb-2'>Team Generator 'Node.js'</h3>
             </div>
+            </a>
+            <a href='https://github.com/MichaelR432/track-my-team-db' target="blank">
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={trackteam} alt="" className=" shadow-lg"></Image>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Track My Team 'Sql'</h3>
+            </div>
+            </a>
 
           </div>
         </section>
