@@ -14,7 +14,7 @@ import { useState } from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [darkMode, setDarkMode] =useState(false);
+  const [darkMode, setDarkMode] =useState(true);
   return (
     <div className={darkMode ? "dark" :""}>
     <>
@@ -27,11 +27,11 @@ export default function Home() {
       <main className=' bg-white dark:bg-slate-900 px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl'>Developed By Mike</h1>
+            <h1 className='text-xl dark:text-white'>Developed By Mike</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} 
-                className='cursor-pointer text-2xl'/>
+                className='cursor-pointer text-2xl  dark:text-white'/>
               </li>
               <li>
                 <a className=' bg-gradient-to-r from-green-700 to-green-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
@@ -41,12 +41,12 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className=' text-5xl py-2 text-green-700 font-medium md:text-6xl'>Michael A Ramos</h2>
-            <h3 className=' text-2xl py-2 md:text-3xl'>Full Stack Developer</h3>
-              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+            <h3 className=' text-2xl py-2 md:text-3xl  dark:text-white'>Full Stack Developer</h3>
+              <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto  dark:text-gray-300'>
               Coding coder who likes to code! Coding coder who likes to code! Coding coder who likes to code!
               </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16'>
+          <div className='text-5xl flex justify-center gap-16  dark:text-white'>
             <a href='https://www.linkedin.com/in/michael-ramos-4399aa1a4/' target="blank">
             <AiFillLinkedin />
             </a>
@@ -61,33 +61,33 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className=' dark:text-white'>
           <div>
-            <h3 className='text-center text-3xl py-1 mt-5'>Something something</h3>
-            <p className='text-center text-md py-2 leading-8 text-gray-800'> looking for a yab</p>
-            <p className='text-center text-md py-2 leading-8 text-gray-800'>I know how to code</p>
+            <h3 className='text-center text-3xl py-1 mt-5 '>Something something</h3>
+            <p className='text-center text-md py-2 leading-8 text-gray-800  dark:text-white'> looking for a yab</p>
+            <p className='text-center text-md py-2 leading-8 text-gray-800  dark:text-white'>I know how to code</p>
           </div>
           <div className=' lg:flex gap-10 justify-between'>
             <a href='https://michaelr432.github.io/weather-or-not-dashboard/' target="blank">
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700'>
               <Image src={weather} alt="" className=" shadow-lg"></Image>
               <h3 className='text-lg font-medium pt-8 pb-2'>Weather Dashborad</h3>
             </div>
             </a>
             <a href='https://michaelr432.github.io/password-gen-chall3/' target="blank">
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700'>
               <Image src={passwordgen} alt="" className=" shadow-lg"></Image>
               <h3 className='text-lg font-medium pt-8 pb-2'>Password Generator</h3>
             </div>
             </a>
             <a href='https://github.com/MichaelR432/generate-my-team' target="blank">
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700'>
               <Image src={teamgen} alt="" className=" shadow-lg"></Image>
               <h3 className='text-lg font-medium pt-8 pb-2'>Team Generator 'Node.js'</h3>
             </div>
             </a>
             <a href='https://github.com/MichaelR432/track-my-team-db' target="blank">
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700'>
               <Image src={trackteam} alt="" className=" shadow-lg"></Image>
               <h3 className='text-lg font-medium pt-8 pb-2'>Track My Team 'Sql'</h3>
             </div>
