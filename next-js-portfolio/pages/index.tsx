@@ -14,9 +14,9 @@ import { useState } from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [darkMode, setDarkMode] =useState(true);
+  const [darkMode, setDarkMode] =useState(false);
   return (
-    <div className={darkMode ? "dark" :""}>
+  <div className={darkMode ? "dark" :""}>
     <>
       <Head>
         <title>Michael A Ramos Portfolio</title>
@@ -27,7 +27,7 @@ export default function Home() {
       <main className=' bg-white dark:bg-slate-900 px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl dark:text-white'>Developed By Mike</h1>
+            <h1 className='text-xl text-bold dark:text-white'>Developed By Mike</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} 
@@ -43,7 +43,7 @@ export default function Home() {
             <h2 className=' text-5xl py-2 text-green-700 font-medium md:text-6xl'>Michael A Ramos</h2>
             <h3 className=' text-2xl py-2 md:text-3xl  dark:text-white'>Full Stack Developer</h3>
               <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto  dark:text-gray-300'>
-              Coding coder who likes to code! Coding coder who likes to code! Coding coder who likes to code!
+              Hello! Welcome to my Portfolio! 
               </p>
           </div>
           <div className='text-5xl flex justify-center gap-16  dark:text-white'>
@@ -63,9 +63,10 @@ export default function Home() {
 
         <section className=' dark:text-white'>
           <div>
-            <h3 className='text-center text-3xl py-1 mt-5 '>Something something</h3>
-            <p className='text-center text-md py-2 leading-8 text-gray-800  dark:text-white'> looking for a yab</p>
-            <p className='text-center text-md py-2 leading-8 text-gray-800  dark:text-white'>I know how to code</p>
+            <h3 className='text-center text-3xl py-1 mt-5 '>About Me</h3>
+            <p className='text-center text-md py-2 leading-8 text-gray-800  dark:text-white max-w-lg mx-auto'> I am University of Arizona Coding Bootcamp Alum and continue to learn outside of the classroom. I work on developing both client and sever software systems. I enjoy working on various stages of the development process and connecting all levels of the dev team. </p>
+
+            <h3 className='text-center text-3xl py-1 mt-5 '>My Projects</h3>
           </div>
           <div className=' lg:flex gap-10 justify-between'>
             <a href='https://michaelr432.github.io/weather-or-not-dashboard/' target="blank">
@@ -92,12 +93,10 @@ export default function Home() {
               <h3 className='text-lg font-medium pt-8 pb-2'>Track My Team 'Sql'</h3>
             </div>
             </a>
-
           </div>
-        </section>
-        
+        </section> 
       </main>
     </>
-    </div>
+  </div>
   )
 }
