@@ -64,7 +64,7 @@ export default function Home() {
         <section className=' dark:text-white'>
           <div>
             <h3 className='text-center text-3xl py-1 mt-5 '>About Me</h3>
-            <p className='text-center text-md py-2 leading-8 text-gray-800  dark:text-white max-w-lg mx-auto'> I am University of Arizona Coding Bootcamp Alum and continue to learn outside of the classroom. I work on developing both client and sever software systems. I enjoy working on various stages of the development process and connecting all levels of the dev team. </p>
+            <p className='text-center text-md py-2 leading-8 text-gray-800  dark:text-white max-w-lg mx-auto'> I am a University of Arizona Coding Bootcamp Alum and continue to learn outside of the classroom everyday. I have worked with both client and sever software systems. I enjoy connecting with other engineers and working through different stages of the development process.  </p>
 
             <h3 className='text-center text-3xl py-1 mt-5 '>My Projects</h3>
           </div>
