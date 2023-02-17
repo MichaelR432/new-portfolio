@@ -34,7 +34,7 @@ export default function Home() {
                 className='cursor-pointer text-2xl  dark:text-white'/>
               </li>
               <li>
-                <a className=' bg-gradient-to-r from-green-700 to-green-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
+                <a className=' bg-gradient-to-r from-green-700 to-green-500 text-white px-4 py-2 rounded-md ml-8' href='https://drive.google.com/file/d/1olVZ_ELkYGjXhznAWk_ockTrkKZ6X-1y/view?usp=sharing' target="blank">Resume</a>
               </li>
               
             </ul>
