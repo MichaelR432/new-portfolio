@@ -72,7 +72,7 @@ export default function Home() {
             <a href='https://michaelr432.github.io/weather-or-not-dashboard/' target="blank">
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700'>
               <Image src={weather} alt="" className=" shadow-lg"></Image>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Weather Dashborad</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Weather Dashboard</h3>
             </div>
             </a>
             <a href='https://michaelr432.github.io/password-gen-chall3/' target="blank">
